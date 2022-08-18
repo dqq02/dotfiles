@@ -7,6 +7,7 @@ polybar -r example &
 picom &
 xsetroot -cursor_name left_ptr &
 setxkbmap -option grp:win_space_toggle us,ru &
+xinput --set-prop 10 335 1 &
 #setxkbmap -option grp:alt_shift_toggle us,ru &
 # conky &
 #numlockx &
