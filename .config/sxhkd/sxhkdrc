@@ -142,15 +142,23 @@ super + alt + shift + {h,j,k,l}
 
 #Brightness control
 XF86MonBrightnessDown
-	xbacklight -dec 15%
+	xbacklight -dec 10%
 XF86MonBrightnessUp
-	xbacklight -inc 15%
+	xbacklight -inc 10%
 
 
 #Volume Control
+; XF86AudioLowerVolume
+; 	amixer set Master 15%-
+; XF86AudioRaiseVolume
+; 	amixer set Master 15%+
+; XF86AudioMute
+;         amixer set Master toggle
+
+
 XF86AudioLowerVolume
-	amixer set Master 5%-
+	pactl -- set-sink-volume 3 -10%
 XF86AudioRaiseVolume
-	amixer set Master 5%+
+	pactl -- set-sink-volume 3 +10%
 XF86AudioMute
-        amixer set Master toggle
+	pactl -- set-sink-mute 3 toggle
