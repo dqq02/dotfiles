@@ -19,15 +19,16 @@ shift + @Print
 	scrot -d 5
 
 super + n
-	thunar
+	neovide
 
 super + r
 	kitty -e ranger
 
 super + b
-	google-chrome
+	google-chrome-stable
 
-
+super + v
+	kitty -e vim 
 
 ###########################################
 ####          Control BSPWM            ####

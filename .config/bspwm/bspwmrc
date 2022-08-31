@@ -7,7 +7,7 @@ polybar -r --config=$HOME/.config/polybar/config.ini example &
 picom &
 xsetroot -cursor_name left_ptr &
 setxkbmap -option grp:win_space_toggle us,ru &
-xinput --set-prop 9 315 1 &
+xinput --set-prop 9 315 0 &
 xset r rate 250 40 &
 nm-applet --indicator &
 dunst &
